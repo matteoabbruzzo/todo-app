@@ -1,0 +1,45 @@
+.Container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  row-gap: 16px;
+  text-align: left;
+  max-width: 65%;
+  margin: 16px auto;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.Container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ButtonPanel {
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.SaveButton {
+  background-color: var(--saveColor);
+  margin: 1px solid var(--saveColor);
+}
+
+.SaveButton:hover {
+  background-color: var(--saveColorHover);
+  margin: 1px solid var(--saveColorHover);
+}
+
+.DeleteButton {
+  background-color: var(--deleteColor);
+  margin: 1px solid var(--deleteColor);
+}
+
+.DeleteButton:hover {
+  background-color: var(--deleteColorHover);
+  margin: 1px solid var(--deleteColorHover);
+}

@@ -1,0 +1,76 @@
+.AppBar {
+  font-size: 20px;
+  font-weight: 700;
+  height: 48px;
+  background-color: var(--appBarColor);
+  line-height: 48px;
+  color: #fff;
+  text-align: left;
+  padding: 4px 16px;
+}
+
+.RecordingBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 4px;
+  box-shadow: 0 4px 8px 0 rgba(7, 101, 155, 0.2);
+  height: 32px;
+}
+
+.AlertReplay {
+  color: var(--deleteColor);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 32px;
+  width: 200px;
+}
+
+.Title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #07659b;
+  margin: 16px 0;
+}
+
+.RecordingButton {
+  background-color: var(--saveColor);
+  margin: 1px solid var(--saveColor);
+  min-width: 128px;
+}
+
+.RecordingButton:hover {
+  background-color: var(--saveColorHover);
+  margin: 1px solid var(--saveColorHover);
+}
+
+.StopButton {
+  background-color: var(--deleteColor);
+  margin: 1px solid var(--deleteColor);
+}
+
+.StopButton:hover {
+  background-color: var(--deleteColorHover);
+  margin: 1px solid var(--deleteColorHover);
+}
+
+.PlayButton {
+  background-color: var(--playColor);
+  margin: 1px solid var(--playColor);
+}
+
+.PlayButton:hover {
+  background-color: var(--playColorHover);
+  margin: 1px solid var(--playColorHover);
+}
+
+.EmptyButton {
+  background-color: var(--emptyStoreColor);
+  margin: 1px solid var(--emptyStoreColor);
+}
+
+.EmptyButton:hover {
+  background-color: var(--emptyStoreColorHover);
+  margin: 1px solid var(--emptyStoreColorHover);
+}

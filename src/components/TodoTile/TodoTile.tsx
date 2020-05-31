@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { TileMode } from '../../utils/type';
+import classes from './TodoTile.module.css';
 
 type TodoTileProps = {
   mode: TileMode;
@@ -80,7 +81,7 @@ const TodoTile = (props: TodoTileProps) => {
   };
 
   return (
-    <div>
+    <div className={classes.Container}>
       {mode === TileMode.modify && initCreationDate ? (
         <label htmlFor={`date-${idTodo}`}>
           Creation date
@@ -114,11 +115,12 @@ const TodoTile = (props: TodoTileProps) => {
         />
       </label>
 
-      <div>
+      <div className={classes.ButtonPanel}>
         <div>
           {mode === TileMode.create ? (
             <button
               type="button"
+              className={classes.SaveButton}
               onClick={onSaveClickHandler}
               disabled={flagReplay}
             >
@@ -130,6 +132,7 @@ const TodoTile = (props: TodoTileProps) => {
             <>
               <button
                 type="button"
+                className={classes.SaveButton}
                 onClick={onUpdateClickHandler}
                 disabled={flagReplay}
               >
@@ -137,6 +140,7 @@ const TodoTile = (props: TodoTileProps) => {
               </button>
               <button
                 type="button"
+                className={classes.DeleteButton}
                 onClick={onDeleteClickHandler}
                 disabled={flagReplay}
               >

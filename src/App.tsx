@@ -3,6 +3,7 @@ import TodoTile from './components/TodoTile/TodoTile';
 import { TileMode, Todo, todoDBName, todoStoreName } from './utils/type';
 import useTodo from './hooks/useTodo';
 import { clearAllItems } from './utils/db';
+import classes from './App.module.css';
 
 const App = () => {
   const [
@@ -39,11 +40,16 @@ const App = () => {
 
   return (
     <div>
-      <div>TO-DO Web App</div>
-      <div>
-        {flagReplay ? <div>Replay in progress</div> : null}
+      <div className={classes.AppBar}>TO-DO Web App</div>
+      <div className={classes.RecordingBar}>
+        {flagReplay ? (
+          <div className={classes.AlertReplay}>Replay in progress</div>
+        ) : null}
         <div>
           <button
+            className={
+              flagRecorging ? classes.StopButton : classes.RecordingButton
+            }
             type="button"
             onClick={toggleFlagRecording}
             disabled={flagReplay}
@@ -54,6 +60,7 @@ const App = () => {
             type="button"
             onClick={onPlayClickHandler}
             disabled={flagRecorging}
+            className={classes.PlayButton}
           >
             Replay
           </button>
@@ -64,12 +71,13 @@ const App = () => {
               alert('Store is empty');
             }}
             disabled={flagRecorging || flagReplay}
+            className={classes.EmptyButton}
           >
             Empty stored recording
           </button>
         </div>
       </div>
-      <div>Create new TO-DO</div>
+      <div className={classes.Title}>Create new TO-DO</div>
       <TodoTile
         idTodo={0} // first tile for creation
         initName=""
@@ -80,7 +88,9 @@ const App = () => {
         updateTodoItem={updateTodoItem}
         deleteTodoItem={deleteTodoItem}
       />
-      {todoList.length > 0 ? <div>Your TO-DO list</div> : null}
+      {todoList.length > 0 ? (
+        <div className={classes.Title}>Your TO-DO list</div>
+      ) : null}
       {todoStack}
     </div>
   );
