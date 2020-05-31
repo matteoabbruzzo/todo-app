@@ -1,0 +1,13 @@
+{
+  "roots": ["<rootDir>/src"],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx)$",
+  "collectCoverageFrom": ["src/**/*.{js,jsx,ts,tsx}", "!/node_modules/"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  },
+  "verbose": true
+}

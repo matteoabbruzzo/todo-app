@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb-typescript-prettier"],
+  "rules": {
+    "no-console": 0,
+    "no-alert": 0
+  },
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  }
+}
