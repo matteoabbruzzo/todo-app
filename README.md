@@ -8,6 +8,9 @@ The user can Create, Update and Remove a TO-DO item. The app has a recording fun
 
 All the recording are stored in the IndexDB.
 
+You can try this app at the link
+[check out demo](https://matteoabbruzzo.github.io/todo-app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
