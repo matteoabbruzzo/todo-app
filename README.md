@@ -8,6 +8,9 @@ The user can Create, Update and Remove a TO-DO item. The app has a recording fun
 
 All the recording are stored in the IndexDB.
 
+You can try this app at the link
+[check out demo](https://matteoabbruzzo.github.io/todo-app/)
+
 ## gh-pages
 
 This is the branch to deploy the demo with GitHub pages, switch to master branch for project details.
