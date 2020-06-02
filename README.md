@@ -36,6 +36,6 @@ Linting source code
 
 Build the app in development mode
 
-### `yarn buld`
+### `yarn build`
 
 Build the app in production mode
