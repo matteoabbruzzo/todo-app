@@ -8,31 +8,6 @@ The user can Create, Update and Remove a TO-DO item. The app has a recording fun
 
 All the recording are stored in the IndexDB.
 
-## Available Scripts
+## gh-pages
 
-In the project directory, you can run:
-
-### `yarn`
-
-Install all the required packages.
-
-### `yarn start`
-
-Runs the app in the development mode.
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
-
-### `yarn test`
-
-To excute unit test
-
-### `yarn lint`
-
-Linting source code
-
-### `yarn dev`
-
-Build the app in development mode
-
-### `yarn buld`
-
-Build the app in production mode
+This is the branch to deploy the demo with GitHub pages, switch to master branch for project details.
